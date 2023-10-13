@@ -1,0 +1,11 @@
+@mixin flexBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin themeEllipseForm{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

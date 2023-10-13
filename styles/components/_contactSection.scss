@@ -1,0 +1,146 @@
+.contact-content-con{
+    display: flex;
+    padding-top: 3.5rem;
+
+    .left-contact{
+        flex: 2;
+
+        h4{
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        p{
+            margin: 1rem 0;
+            line-height: 1.5rem;
+
+            .signature{
+                color: var(--color-secondary);
+                font-weight: 600;
+            }
+        }
+
+        .contact-info{
+            .contact-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p{
+                    margin: .3rem 0 !important;
+                    padding: 0 !important;
+
+                    span a {
+                        position: relative;
+                        transition: all .4s ease-in-out;
+                        
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            background-color: var(--color-secondary);
+                            height: 2px;
+                            width: 0;
+                            left: 0;
+                            bottom: -2px;
+
+                        }
+                        &:hover:after{
+                            width: 100%;
+                            transition: all .6s ease-in-out;
+                        }
+                        &:hover{
+                            color: var(--color-secondary);
+                            text-shadow: var(--text-shadow-1);
+                        }
+                    }
+                }
+
+                .icon{
+                    display: grid;
+                    grid-template-columns: 40px 1fr;
+
+                    i{
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .contact-icon{
+            display: flex;
+            margin-top: 2rem;
+
+            a{
+               @include flexBlock;
+                color: var(--color-white);
+                background-color: var(--color-grey-5);
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin: 0 .4rem;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    background-color: var(--color-secondary);
+                    transform: translateY(-5px);
+                    transition: all .4s ease-in-out;
+                    box-shadow: var(--box-shadow-2);
+
+                    i{
+                        color: var(--color-white);
+                        transform: rotate(360deg);
+                        transition: all .6s ease-in-out;
+                    }
+                }
+
+                i{
+                    @include flexBlock;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+
+        .input-control{
+            margin: 1.5rem 0;
+
+            input, textarea{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-grey-5);
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+
+                &:focus{
+                    background-color: var(--color-grey-dark-light);
+                    box-shadow: var(--box-shadow-focus);
+                    transition: all .4s ease-in-out;
+                }
+            }
+
+            .btn-icon button{
+                cursor: pointer;
+                background: transparent;
+            }
+        }
+
+        .i-c-2{
+            display: flex;
+            :last-child{
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+:root{
+    --color-primary: #1a2421;
+    --color-secondary: #00cc99;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+    --color-ellipse1: #00cc99;
+    --color-ellipse2: #7df9ff;
+    --color-ellipse3: #eeff1b;
+    --color-modal: rgba(0,204,153,.6);
+    --color-grey-dark-light: #454e56;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 0 5px rgba(0,139,139,.6);
+    --box-shadow-2: 0 0 10px rgba(0,191,255,.8);
+    --box-shadow-abt-item: 1px 2px 10px rgba(102,221,170,.4);
+    --box-shadow-abt-item-hover: 0 0 10px rgba(0,255,255,.5);
+    --text-shadow-1: 0 0 10px rgba(0,255,157,.6);
+    --box-shadow-img: 0 0 15px rgba(245,245,245,.6),
+                      0 0 15px rgba(105,105,105,.4);
+    --box-shadow-focus: 3px 3px 10px rgba(245,245,245,.4);
+    --box-shadow-theme-btn: 0 0 12px rgba(238,230,0,.9);
+}
+
+.light-theme{
+    --color-primary: #faf0e6;
+    --color-secondary: #d473d4;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #6c7983;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #e5e4e2;
+    --color-grey-6: #ffddca;
+    --color-ellipse1: #00ffff;
+    --color-ellipse2: #4c516d;
+    --color-ellipse3: #cc00cc;
+    --color-modal: rgba(186,85,211,.4);
+    --color-grey-dark-light: #e8ccd7; //#dbe1e8
+    --box-shadow-1: 0 0 5px rgba(255,0,255,.6);
+    --box-shadow-2: 0 0 10px rgba(244,0,161,.8);
+    --box-shadow-abt-item: 1px 2px 10px rgba(255,119,255,.4);
+    --box-shadow-abt-item-hover: 0 0 10px rgba(255,51,204,.5);
+    --text-shadow-1: 0 0 10px rgba(191,0,255,.6);
+    --box-shadow-img: 0 0 10px rgba(220,220,220,.9),
+                      0 0 15px rgba(105,105,105);
+    --box-shadow-focus: 3px 3px 10px rgba(170,152,169,.4);
+    --box-shadow-theme-btn: 0 0 12px rgba(0,0,0,.9);
+}
