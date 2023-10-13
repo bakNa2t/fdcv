@@ -217,6 +217,7 @@
 
             a{
                 color: var(--color-secondary);
+                transition: all .4s ease-in-out;
                 
                 &:hover{
                     transform: translateY(-5px);
@@ -235,8 +236,9 @@
 
             a{
                 color: var(--color-secondary);
+                transition: all .4s ease-in-out;
                 &:hover{
-                    transform: translateY(-5px);
+                    transform: translateY(-3px);
                     text-shadow: var(--text-shadow-1);
                     transition: all .4s ease-in-out;
                 }
