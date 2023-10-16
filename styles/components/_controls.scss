@@ -40,16 +40,11 @@
                     background-color: var(--color-modal);
                     transition: all .6s ease-in-out;
                 }
-                // &::before{
-                //     visibility: visible;
-                //     opacity: 1;
-                //     transition: all .6s ease-in-out;
-                // }
 
                 i{
                     transform: rotate(360deg);
                     color: var(--color-white) !important;
-                    transition: all .8s ease-in-out;
+                    transition: all .4s ease-in-out;
                 }
             }
 
@@ -68,19 +63,6 @@
                 border: 1px solid var(--color-secondary);
                 transition: all .4s ease-in-out;
             }
-            // &::before{
-            //     content: '';
-            //     position: absolute;
-            //     width: 7px;
-            //     height: 7px;
-            //     border-top: 1px solid var(--color-secondary);
-            //     border-right: 1px solid var(--color-secondary);
-            //     transform: rotate(45deg);
-            //     right: 3.7rem;
-            //     visibility: hidden;
-            //     opacity: 0;
-            //     transition: all .4s ease-in-out;
-            // }
         }
 
         i{
