@@ -239,7 +239,7 @@
     }  
     .header-content{
         grid-template-columns: 1fr;
-        padding-bottom: 6rem;
+        padding-bottom: 5rem;
 
         .left-header{
             .image{
@@ -254,17 +254,16 @@
 
         .right-header{
             padding: 0 !important;
-            margin-top: 0;
-            margin-bottom: 2rem;
-        }
-    }
-    .right-header{
-        grid-row: 1;
-        width: 90%;
-        margin: 0 auto;
+            margin: 0 auto 2rem;
+            grid-row: 1;
+            width: 90%;
 
-        .name{
-            font-size: 2.5rem !important;
+            .name{
+                strong{
+                    font-size: 2.8rem !important;
+                    letter-spacing: -1px;
+                }
+            }
         }
     }
     .about-container{
