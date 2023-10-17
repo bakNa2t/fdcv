@@ -10,7 +10,7 @@ function pageTransitions(){
             let currentBtn = document.querySelectorAll('.active-btn');
             currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
             this.className += ' active-btn';
-        })
+        });
     }
 
     // Section active class / Добавление класса active на элемент section
@@ -41,7 +41,6 @@ function pageTransitions(){
         let element = document.body;
         element.classList.toggle('light-theme');
     })
-
 }
 
 pageTransitions();
