@@ -1,7 +1,7 @@
+const allSections = document.querySelector('.main-content');
 const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelector('.main-content');
 
 function pageTransitions(){
     // Button click active class / Замена active-btn на '' в блоке controls
@@ -42,5 +42,19 @@ function pageTransitions(){
         element.classList.toggle('light-theme');
     })
 }
-
 pageTransitions();
+
+function displayControlDesc () {
+    sectBtn.forEach((sectBtn) => {
+        sectBtn.addEventListener('mouseover', () => {
+            if (!sectBtn.contains(document.querySelector('.active-btn'))) {
+                sectBtn.children[1].classList.replace('control__desc_hidden', 'control__desc_visible');
+            }
+        });
+        sectBtn.addEventListener('mouseout', () => {
+            sectBtn.children[1].classList.replace('control__desc_visible', 'control__desc_hidden');
+        });
+    });
+}
+
+displayControlDesc();
