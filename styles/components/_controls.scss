@@ -32,14 +32,6 @@
                 transform: translateY(-5px);
                 box-shadow: var(--box-shadow-2);
                 transition: all .4s ease-in-out;
-                
-                // .control__desc{
-                //     opacity: 1;
-                //     visibility: visible;
-                //     color: var(--color-white);
-                //     background-color: var(--color-modal);
-                //     transition: all .6s ease-in-out;
-                // }
 
                 i{
                     transform: rotate(360deg);
@@ -57,8 +49,6 @@
                 text-transform: uppercase;
                 pointer-events: none;
                 padding: .3rem .5rem;
-                // visibility: hidden;
-                // opacity: 0;
                 border-radius: .6rem;
                 border: 1px solid var(--color-secondary);
                 transition: all .4s ease-in-out;
