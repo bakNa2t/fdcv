@@ -3,6 +3,7 @@ const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 
+//transition between pages using control buttons of navigation panel / переход между страницами с помощью кнопок навигации
 function pageTransitions(){
     // Button click active class / Замена active-btn на '' в блоке controls
     for(i = 0; i < sectBtn.length; i++){
@@ -13,21 +14,20 @@ function pageTransitions(){
         });
     }
 
-    // Section active class / Добавление класса active на элемент section
+    // Section active class after clicking / Добавление класса active на элемент section
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;
-        // console.log(id)
         if(id){
-            // remove selected from the other buttons / удаляем класс active из sectBtn
+            // remove class active from the other buttons / удаляем класс active из sectBtn
             sectBtns.forEach((btn) => {
-                btn.classList.remove('active')
-            })
-            e.target.classList.add('active')
+                btn.classList.remove('active');
+            });
+            e.target.classList.add('active');
 
-            // hide other sections / скрываем все sections
+            // hide class active from other sections / скрываем класс active во всех остальных sections
             sections.forEach((section) => {
                 section.classList.remove('active')
-            })
+            });
 
             // show section / показываем нужную section
             const element = document.getElementById(id);
@@ -44,6 +44,7 @@ function pageTransitions(){
 }
 pageTransitions();
 
+// display control button description when hovering / отображение описания кнопок навигации при навидении курсора на кнопку
 function displayControlDesc () {
     sectBtn.forEach((sectBtn) => {
         sectBtn.addEventListener('mouseover', () => {
