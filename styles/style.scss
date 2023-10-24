@@ -50,7 +50,7 @@ section{
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 18rem; //original padding 3rem 18rem
+    padding: 3rem 18rem;
 }
 
 .section{
@@ -135,6 +135,7 @@ section{
             right: 0;
             transform: translateX(100%);
             z-index: -1;
+            transition: all .4s ease-out;
         }
         &:hover:before{
             width: 100%;
@@ -159,7 +160,6 @@ section{
         &:hover{
             background-color: var(--color-secondary);
             color: var(--color-black);
-            // transform: translateY(-5px);
             border: 2px solid var(--color-primary);
             box-shadow: var(--box-shadow-2);
         }

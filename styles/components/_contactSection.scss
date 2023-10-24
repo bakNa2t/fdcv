@@ -21,6 +21,7 @@
         }
 
         .contact-info{
+            
             .contact-item{
                 display: flex;
                 align-items: center;
@@ -42,6 +43,7 @@
                             width: 0;
                             left: 0;
                             bottom: -2px;
+                            transition: all .6s ease-in-out;
 
                         }
                         &:hover:after{

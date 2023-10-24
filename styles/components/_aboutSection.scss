@@ -17,6 +17,13 @@
             span{
                 padding-left: 1rem;
             }
+
+            code{
+                color: var(--color-secondary);
+                // font-weight: 300;
+                // font-family: 'Open Sans', monospace;
+                text-decoration: underline;
+            }
         }
 
         h4{
