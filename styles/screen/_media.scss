@@ -40,14 +40,8 @@
         padding: 2rem 10rem;
     }
     .header-content {
-        // .left-header{
-        //     .image{
-        //         width: 80%;
-        //         margin-left: 4rem;
-        //     }
-        // }
         .right-header{
-        padding-right: 10rem;
+            padding-right: 10rem;
         }
     }
     .about-container{
@@ -55,27 +49,6 @@
             padding-left: 0;
         }
     }
-
-    // .portfolios{
-    //     grid-template-columns: 1fr 1fr;
-    // }
-    // .theme-btn{
-    //     top: .5rem;
-    //     right: .5rem;
-    //     width: 35px;
-    //     height: 35px;
-    // }
-    // .main-title{
-    //     h2{
-    //         font-size: 4rem;
-    //         span{
-    //             font-size: 4rem;
-    //         }
-    //         .bg-size{
-    //             font-size: 4rem;
-    //         }
-    //     }
-    // }
 }
 //=== 900px ===
 @media screen and (max-width: 900px){
@@ -136,10 +109,18 @@
                 margin-left: 3rem;        
             }
         }
+
         .right-header{
             padding-right: 4rem;
             margin-top: 4rem;
             margin-bottom: 7rem;
+        }
+
+        .footer {
+            transform: translateX(-95%);
+            bottom: 75px;
+            font-size: .6rem;
+            opacity: .4;
         }
     }
     .about-container{
@@ -264,6 +245,13 @@
                     letter-spacing: -1px;
                 }
             }
+        }
+
+        .footer {
+            transform: translateX(-65%);
+            bottom: 45px;
+            font-size: .6rem;
+            opacity: .4;
         }
     }
     .about-container{
