@@ -46,16 +46,17 @@ pageTransitions();
 
 // display control button description when hovering / отображение описания кнопок навигации при навидении курсора на кнопку
 function displayControlDesc () {
-    sectBtn.forEach((sectBtn) => {
-        sectBtn.addEventListener('mouseover', () => {
-            if (!sectBtn.contains(document.querySelector('.active-btn'))) {
-                sectBtn.children[1].classList.replace('control__desc_hidden', 'control__desc_visible');
-            }
+    if (screen.width > 800) {
+        sectBtn.forEach((sectBtn) => {
+            sectBtn.addEventListener('mouseover', () => {
+                if (!sectBtn.contains(document.querySelector('.active-btn'))) {
+                    sectBtn.children[1].classList.replace('control__desc_hidden', 'control__desc_visible');
+                }
+            });
+            sectBtn.addEventListener('mouseout', () => {
+                sectBtn.children[1].classList.replace('control__desc_visible', 'control__desc_hidden');
+            });
         });
-        sectBtn.addEventListener('mouseout', () => {
-            sectBtn.children[1].classList.replace('control__desc_visible', 'control__desc_hidden');
-        });
-    });
+    }
 }
-
 displayControlDesc();
