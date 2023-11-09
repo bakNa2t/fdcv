@@ -84,22 +84,23 @@
                 border-radius: 50%;
                 margin: 0 .4rem;
                 transition: all .4s ease-in-out;
+                
                 &:hover{
                     background-color: var(--color-secondary);
                     transform: translateY(-5px);
+                    box-shadow: var(--box-shadow-3);
                     transition: all .4s ease-in-out;
-                    box-shadow: var(--box-shadow-2);
 
                     i{
                         color: var(--color-white);
                         transform: rotate(360deg);
-                        transition: all .6s ease-in-out;
+                        transition: all .4s ease-in-out;
                     }
                 }
 
                 i{
                     @include flexBlock;
-                    font-size: 1.5rem;
+                    font-size: 1.75rem;
                 }
             }
         }
@@ -124,6 +125,7 @@
                 width: 100%;
                 color: var(--color-white);
                 resize: none;
+                transition: all .4s ease-in-out;
 
                 &:focus{
                     background-color: var(--color-grey-dark-light);
