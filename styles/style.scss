@@ -163,6 +163,16 @@ noscript{
         align-items: center;
         overflow: hidden;
         transition: all .4s ease-out;
+        visibility: hidden;
+        opacity: 0;
+        animation: fadeUpBtn 1.5s ease forwards .75s;
+
+        @keyframes fadeUpBtn {
+            to{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
         
         .btn-txt{
             padding: 0 2rem;

@@ -31,7 +31,7 @@
             &:hover:not(.active-btn){
                 background-color: var(--color-secondary);
                 transform: translateY(-5px);
-                box-shadow: var(--box-shadow-2);
+                box-shadow: var(--box-shadow-3);
                 transition: all .4s ease-in-out;
 
                 i{
