@@ -109,13 +109,10 @@
 
             visibility: hidden;
             opacity: 0;
-            animation: fadeUpDesc .75s ease forwards 1.25s;
+            animation: fadeUpDesc 1.25s ease forwards .75s;
 
             @keyframes fadeUpDesc {
-                from{
-                    transform: translateY(1000px);
-                }
-                to{
+                 to{
                     visibility: visible;
                     opacity: 1;
                     transform: translateY(0);
