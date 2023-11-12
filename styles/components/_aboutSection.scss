@@ -20,8 +20,6 @@
 
             code{
                 color: var(--color-secondary);
-                // font-weight: 300;
-                // font-family: 'Open Sans', monospace;
                 text-decoration: underline;
             }
         }
@@ -40,24 +38,28 @@
 
         .about-item{
             border: 1px solid var(--color-grey-5);
-            border-radius: 5px;
+            border-radius: 3px;
             transition: all .4s ease-in-out;
             box-shadow: var(--box-shadow-abt-item);
+
             &:hover{
                 cursor: default;
-                transform: translateY(-5px);
+                transform: translate(3px, -6px);
                 border: 1px solid var(--color-secondary);
                 box-shadow: var(--box-shadow-abt-item-hover);
             }
+
             .abt-text{
                 padding: 1.5rem;
                 display: flex;
                 flex-direction: column;
+
                 .large-text{
                     font-size: 3rem;
                     font-weight: 700;
                     color: var(--color-secondary);
                 }
+                
                 .small-text{
                     padding-left: 3rem;
                     position: relative;
