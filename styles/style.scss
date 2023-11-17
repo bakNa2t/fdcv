@@ -237,8 +237,14 @@ noscript {
     }
   }
 
-  #msg {
+  .msg {
+    display: none;
     margin: auto auto;
+    text-align: center;
+    font-weight: bolder;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-secondary);
+    border-radius: 1rem;
   }
 }
 

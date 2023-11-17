@@ -8,13 +8,9 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then(() => {
-      msg.innerHTML = "Message sent successfully!";
-      msg.style.backgroundColor = "var(--color-secondary)";
-      msg.style.borderRadius = ".8rem";
-      msg.style.padding = ".8rem 1.5rem";
+      msg.style.display = "block";
       setTimeout(function () {
-        msg.innerHTML = "";
-        msg.removeAttribute("style");
+        msg.style.display = "none";
       }, 3000);
       form.reset();
     })
