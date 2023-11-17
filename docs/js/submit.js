@@ -18,9 +18,9 @@ form.addEventListener("submit", (e) => {
 });
 
 //Show alert message after submit
-subBtn.addEventListener("click", () => {
+/*subBtn.addEventListener("click", () => {
   const inputName = document.getElementById("input-name");
   if (inputName.value !== "") {
     alert("Message sent successfully!");
   }
-});
+});*/
