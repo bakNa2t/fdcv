@@ -1,5 +1,11 @@
-//=== 1400px < ===
+//=== 1400px ===
 @media screen and (min-width: 1400px) {
+  .sec5 {
+    padding: 14rem 22rem;
+  }
+}
+//=== 1900px < ===
+@media screen and (min-width: 1900px) {
   .sec5 {
     padding: 18rem 30rem;
   }
