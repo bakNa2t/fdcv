@@ -376,8 +376,11 @@
   .contact-content-con {
     padding-top: 1rem !important;
   }
-  .portfolio-text {
-    padding: 2rem 1.5rem;
+  .portfolios {
+    width: 90%;
+    .portfolio-text {
+      padding: 2rem 1.5rem;
+    }
   }
   .main-title {
     h2 {
