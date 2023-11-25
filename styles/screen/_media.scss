@@ -298,7 +298,7 @@
   .about-stats {
     .progress-bars {
       grid-template-columns: 1fr;
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
     }
   }
@@ -376,11 +376,16 @@
   .contact-content-con {
     padding-top: 1rem !important;
   }
-  .portfolios {
-    width: 90%;
+  .portfolio {
     .portfolio-text {
       padding: 2rem 1.5rem;
     }
+    .portfolios {
+      width: 90%;
+    }
+  }
+  .tools {
+    width: 90%;
   }
   .main-title {
     h2 {
@@ -390,6 +395,20 @@
       }
       .bg-text {
         font-size: 4.8rem;
+      }
+    }
+  }
+  .theme__container {
+    top: 0.5rem;
+    right: 0.5rem;
+
+    .theme__btn {
+      width: 30px;
+      height: 30px;
+
+      &::before {
+        width: 4px;
+        height: 4px;
       }
     }
   }
@@ -446,20 +465,6 @@
       }
       .bg-text {
         font-size: 4.3rem;
-      }
-    }
-  }
-  .theme__container {
-    top: 0.5rem;
-    right: 0.5rem;
-
-    .theme__btn {
-      width: 30px;
-      height: 30px;
-
-      &::before {
-        width: 4px;
-        height: 4px;
       }
     }
   }
