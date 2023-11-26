@@ -7,7 +7,10 @@
 //=== 1900px < ===
 @media screen and (min-width: 1900px) {
   .sec5 {
-    padding: 18rem 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 30rem;
   }
 }
 //=== 1200px ===
