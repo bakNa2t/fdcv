@@ -1,19 +1,13 @@
 //=== 1400px ===
 @media screen and (min-width: 1400px) {
   .sec5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0rem 22rem;
+    padding: 10rem 22rem;
   }
 }
 //=== 1900px < ===
 @media screen and (min-width: 1900px) {
   .sec5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0rem 30rem;
+    padding: 15rem 30rem;
   }
 }
 //=== 1200px ===
