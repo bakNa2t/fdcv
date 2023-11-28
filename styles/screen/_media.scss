@@ -6,6 +6,21 @@
 }
 //=== 1900px < ===
 @media screen and (min-width: 1900px) {
+  section {
+    padding: 3rem 30rem;
+  }
+  .header-content {
+    .left-header {
+      .image {
+        height: 70%;
+        width: 70%;
+        margin-left: 10rem;
+      }
+    }
+  }
+  .sec4 {
+    padding: 12rem 30rem;
+  }
   .sec5 {
     padding: 15rem 30rem;
   }
