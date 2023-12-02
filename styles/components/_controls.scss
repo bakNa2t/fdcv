@@ -1,79 +1,81 @@
-.controls{
+.controls {
+  @include flexBlock;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  flex-direction: column;
+  transform: translateY(-50%);
+
+  .active-btn {
+    background-color: var(--color-secondary) !important;
+    transition: all 0.4s ease-in-out;
+
+    i {
+      color: var(--color-white) !important;
+    }
+  }
+
+  .control {
     @include flexBlock;
-    position: fixed;
-    z-index: 10;
-    top: 50%;
-    right: 3%;
-    flex-direction: column;
-    transform: translateY(-50%);
-    
-        .active-btn{
-            background-color: var(--color-secondary) !important;
-            transition: all .4s ease-in-out;
+    padding: 1rem;
+    cursor: default;
+    background-color: var(--color-grey-4);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0.7rem 0;
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.4s ease-in-out;
 
-                i{
-                    color: var(--color-white) !important;
-                }
-        }
-        
-        .control{
-            @include flexBlock;
-            padding: 1rem;
-            cursor: default;
-            background-color: var(--color-grey-4);
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            margin: .7rem 0;
-            box-shadow: var(--box-shadow-1);
-            transition: all .4s ease-in-out;
+    &:hover:not(.active-btn) {
+      cursor: pointer;
+      background-color: var(--color-secondary);
+      transform: translateY(-5px);
+      box-shadow: var(--box-shadow-3);
+      transition: all 0.4s ease-in-out;
 
-            &:hover:not(.active-btn){
-                cursor: pointer;
-                background-color: var(--color-secondary);
-                transform: translateY(-5px);
-                box-shadow: var(--box-shadow-3);
-                transition: all .4s ease-in-out;
+      i {
+        transform: rotate(360deg);
+        color: var(--color-white) !important;
+        transition: all 0.4s ease-in-out;
+      }
+    }
 
-                i{
-                    transform: rotate(360deg);
-                    color: var(--color-white) !important;
-                    transition: all .4s ease-in-out;
-                }
-            }
+    .control__desc {
+      position: absolute;
+      text-align: center;
+      width: fit-content;
+      right: 4rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      pointer-events: none;
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.6rem;
+      border: 1px solid var(--color-secondary);
+      transition: all 0.4s ease-in-out;
+    }
 
-            .control__desc{
-                position: absolute;
-                text-align: center;
-                width: fit-content;
-                right: 4rem;
-                font-size: .8rem;
-                text-transform: uppercase;
-                pointer-events: none;
-                padding: .3rem .5rem;
-                border-radius: .6rem;
-                border: 1px solid var(--color-secondary);
-                transition: all .4s ease-in-out;
-            }
+    .control__desc_hidden {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateX(-100px);
+    }
 
-            .control__desc_hidden{
-                visibility: hidden;
-                opacity: 0;
-            }
+    .control__desc_visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+      color: var(--color-white);
+      background-color: var(--color-modal);
+      transition: all 0.4s ease-in-out;
+    }
+  }
 
-            .control__desc_visible{
-                opacity: 1;
-                visibility: visible;
-                color: var(--color-white);
-                background-color: var(--color-modal);
-                transition: all .6s ease-in-out;
-            }
-        }
-
-        i{
-            font-size: 1.2rem;
-            color: var(--color-grey-3);
-            pointer-events: none;
-            transition: all .4s ease-in-out;
-        }
+  i {
+    font-size: 1.2rem;
+    color: var(--color-grey-3);
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+  }
 }
