@@ -372,6 +372,11 @@
 
     .control {
       margin: 1rem 0.8rem;
+
+      &:hover:not(.active-btn) {
+        box-shadow: 0 0 0 4px rgba(43, 47, 54, 1),
+          0 0 0 6px rgba(0, 139, 139, 1);
+      }
     }
   }
   .main-title {
