@@ -422,13 +422,20 @@
     top: 0.5rem;
     right: 0.5rem;
 
-    .theme__btn {
-      width: 30px;
-      height: 30px;
+    .theme__wrapper {
+      .theme__desc {
+        right: 1.75rem;
+        font-size: 0.6rem;
+        transform: translateX(-50px);
+      }
+      .theme__btn {
+        width: 30px;
+        height: 30px;
 
-      &::before {
-        width: 4px;
-        height: 4px;
+        &::before {
+          width: 4px;
+          height: 4px;
+        }
       }
     }
   }
