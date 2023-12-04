@@ -1,84 +1,111 @@
-.theme__container{
-    position: fixed;
-    top: 1rem;
-    right: 2rem;
-    
+.theme__container {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
 
-    .theme__btn{
-        @include flexBlock;
-        position: relative;
-        width: 70px;
-        height: 70px;
-        opacity: .5;
-        cursor: pointer;
-        transition: all .8s ease-in-out;
-        &:hover{
-            opacity: 1;
-            transform: scale(1.1);
-            transition: all .8s ease-in-out;
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: transparent;
-            box-shadow: var(--box-shadow-theme-btn);
-            border-radius: 50%;
-        }
-        
-        .ellipse{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
+  .theme__wrapper {
+    position: relative;
+    @include flexBlock;
 
-        .ellipse_1{
-            @include themeEllipseForm;
-            border-bottom: 3px solid var(--color-ellipse1);
-            border-top: 3px solid var(--color-ellipse1);
-            animation: ellipse1 4s linear infinite;
-            filter: drop-shadow(0 0 5px var(--color-ellipse1));
-        }
-        @keyframes ellipse1{
-            from{
-                transform: rotateY(70deg) rotateZ(0deg);
-            }
-            to{
-                transform: rotateY(70deg) rotateZ(360deg);
-            }
-        }
+    .theme__btn {
+      @include flexBlock;
+      position: relative;
+      width: 70px;
+      height: 70px;
+      opacity: 0.5;
+      cursor: pointer;
+      transition: all 0.8s ease-in-out;
 
-        .ellipse_2{
-            @include themeEllipseForm;
-            border-bottom: 3px solid var(--color-ellipse2);
-            border-top: 3px solid var(--color-ellipse2);
-            animation: ellipse2 4s linear infinite;
-            filter: drop-shadow(0 0 5px var(--color-ellipse2));
+      &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        transition: all 0.8s ease-in-out;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: transparent;
+        box-shadow: var(--box-shadow-theme-btn);
+        border-radius: 50%;
+      }
+
+      .ellipse {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
+      .ellipse_1 {
+        @include themeEllipseForm;
+        border-bottom: 3px solid var(--color-ellipse1);
+        border-top: 3px solid var(--color-ellipse1);
+        animation: ellipse1 4s linear infinite;
+        filter: drop-shadow(0 0 5px var(--color-ellipse1));
+      }
+      @keyframes ellipse1 {
+        from {
+          transform: rotateY(70deg) rotateZ(0deg);
         }
-        @keyframes ellipse2{
-            from{
-                transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg);
-            }
-            to{
-                transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg);
-            }
+        to {
+          transform: rotateY(70deg) rotateZ(360deg);
         }
-        
-        .ellipse_3{
-            @include themeEllipseForm;
-            border-bottom: 3px solid var(--color-ellipse3);
-            border-top: 3px solid var(--color-ellipse3);
-            animation: ellipse3 4s linear infinite;
-            filter: drop-shadow(0 0 5px var(--color-ellipse3));
+      }
+
+      .ellipse_2 {
+        @include themeEllipseForm;
+        border-bottom: 3px solid var(--color-ellipse2);
+        border-top: 3px solid var(--color-ellipse2);
+        animation: ellipse2 4s linear infinite;
+        filter: drop-shadow(0 0 5px var(--color-ellipse2));
+      }
+      @keyframes ellipse2 {
+        from {
+          transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg);
         }
-        @keyframes ellipse3{
-            from{
-                transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg);
-            }
-            to{
-                transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
-            }
+        to {
+          transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg);
         }
+      }
+
+      .ellipse_3 {
+        @include themeEllipseForm;
+        border-bottom: 3px solid var(--color-ellipse3);
+        border-top: 3px solid var(--color-ellipse3);
+        animation: ellipse3 4s linear infinite;
+        filter: drop-shadow(0 0 5px var(--color-ellipse3));
+      }
+      @keyframes ellipse3 {
+        from {
+          transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg);
+        }
+        to {
+          transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
+        }
+      }
     }
+
+    .theme__desc {
+      position: absolute;
+      text-align: center;
+      width: 6rem;
+      right: 6rem;
+      font-size: 0.7rem;
+      color: var(--color-secondary);
+      text-transform: uppercase;
+      pointer-events: none;
+      transition: all 0.4s ease-in-out;
+      visibility: hidden;
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    &:hover .theme__desc {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+      transition: all 0.4s ease-in-out;
+    }
+  }
 }
