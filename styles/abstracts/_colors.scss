@@ -11,8 +11,9 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --color-ellipse1: #00cc99;
-  --color-ellipse2: #7df9ff;
-  --color-ellipse3: #eeff1b;
+  --color-ellipse2: #3fff00;
+  --color-ellipse3: #e6e200;
+  --color-border: #ffef00;
   --color-modal: rgba(0, 204, 153, 0.6);
   --color-grey-dark-light: #454e56;
   --br-sm-2: 14px;
@@ -35,7 +36,7 @@
   --box-shadow-img: 0 0 15px rgba(245, 245, 245, 0.6),
     0 0 15px rgba(105, 105, 105, 0.4);
   --box-shadow-focus: 0 0 6px 1px rgba(245, 245, 245, 0.7);
-  --box-shadow-theme-btn: 0 0 12px rgba(238, 230, 0, 0.9);
+  --box-shadow-theme-btn: 0 0 12px rgba(255, 239, 0, 1);
 }
 
 .light-theme {
@@ -53,6 +54,7 @@
   --color-ellipse1: #00ffff;
   --color-ellipse2: #4c516d;
   --color-ellipse3: #cc00cc;
+  --color-border: #483d8b;
   --color-modal: rgba(186, 85, 211, 0.4);
   --color-grey-dark-light: #e8ccd7;
   --box-shadow-1: 0 0 4px 1px rgba(255, 0, 255, 0.8);
