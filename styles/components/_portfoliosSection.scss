@@ -43,19 +43,6 @@
         padding: 0 0.5rem;
         margin-bottom: 1.5rem;
       }
-      p {
-        position: absolute;
-        bottom: 0.4rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        font-size: 0.9rem;
-        text-align: center;
-        color: var(--color-white);
-        span {
-          font-weight: 600;
-        }
-      }
       .icons {
         @include flexBlock;
 
@@ -86,6 +73,17 @@
               transition: all 0.4s ease-in-out;
             }
           }
+        }
+      }
+      p {
+        position: absolute;
+        bottom: 0.4rem;
+        width: 90%;
+        font-size: 0.9rem;
+        text-align: center;
+        color: var(--color-white);
+        span {
+          font-weight: 600;
         }
       }
     }
