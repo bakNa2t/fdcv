@@ -18,7 +18,7 @@
 <div align="center">
     <p style="width: 500px;">
         <a href="https://bakna2t.github.io/fdcv/" target="_blank" >
-            <img alt="Keycode Webapp" src ="./images/readme/resume.png" width="600">
+            <img src ="./images/readme/resume.png" alt="Resume" width="600">
         </a>
     </p>
 </div>
