@@ -81,5 +81,12 @@ function autoSetThemeMode() {
     document.body.classList.remove("light-theme");
   }
 }
-
 autoSetThemeMode();
+
+// Display current year / отображение текущего года
+function fullYear() {
+  const date = new Date();
+  const year = date.getFullYear();
+  document.getElementById("full__year").innerHTML = year;
+}
+fullYear();
