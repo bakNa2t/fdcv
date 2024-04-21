@@ -106,21 +106,25 @@ section {
   font-family: "Poppins", sans-serif;
   font-size: 0.6rem;
   font-weight: 800;
-  color: var(--color-secondary);
+  color: var(--color-grey-2);
   opacity: 0.8;
+
+  span {
+    color: var(--color-secondary);
+  }
 
   a {
     display: inline-block;
     font-size: 0.7rem;
     text-decoration: none;
-    color: var(--color-white);
-    text-shadow: 0 0 4px rgba(85, 85, 85, 0.6);
+    color: var(--color-secondary);
+    text-shadow: 0 0 4px var(--color-grey-1);
     transition: all 0.4s ease-in-out;
 
     &:hover {
       transform: translateY(-3px);
       color: var(--box-shadow-img);
-      text-shadow: 0 0 4px rgba(191, 0, 255, 0.8);
+      text-shadow: 0 0 4px var(--color-border);
       transition: all 0.4s ease-in-out;
     }
   }
