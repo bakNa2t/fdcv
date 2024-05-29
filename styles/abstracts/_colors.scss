@@ -1,6 +1,7 @@
 :root {
   --color-primary: #1a2421;
   --color-secondary: #00cc99;
+  --color-secondary--80: rgba(0, 204, 153, 0.8);
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -42,6 +43,7 @@
 .light-theme {
   --color-primary: #faf0e6;
   --color-secondary: #d473d4;
+  --color-secondary--80: rgba(212, 115, 212, 0.8);
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
