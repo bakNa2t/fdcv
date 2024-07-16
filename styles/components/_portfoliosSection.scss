@@ -24,7 +24,7 @@
     .hover-items {
       @include flexBlock;
       width: 100%;
-      height: 100%;
+      height: 280px;
       background-color: var(--color-secondary--80);
       position: absolute;
       left: 0;
